@@ -1,0 +1,136 @@
+══════════════════════════════════════════════════════════════════════
+  ONCO AI — BREAST CANCER DETECTION SYSTEM
+  CMR University, Bengaluru Lakeside Campus — 562149
+  Final Year Project — 2026 Batch
+  © All Rights Reserved
+══════════════════════════════════════════════════════════════════════
+
+CORRECT FOLDER STRUCTURE:
+───────────────────────────────────────────────────────────────────
+Onco Project/
+│
+├── app.py                          ← MAIN LANDING PAGE (Replace)
+├── requirements.txt                ← All dependencies (Replace)
+├── patients.db                     ← SQLite database (auto-created)
+│
+├── .streamlit/
+│   └── config.toml                 ← Theme & settings (Replace)
+│
+├── models/
+│   ├── cnn_model.h5                ← Your trained CNN model
+│   └── confusion_matrix.png
+│
+├── ai/
+│   ├── predict.py                  ← CNN inference
+│   └── gradcam.py                  ← GradCAM heatmap
+│
+├── auth/
+│   └── guard.py                    ← Login protection
+│
+├── database/
+│   └── database.py                 ← SQLite + IST timezone
+│
+├── utils/
+│   ├── language.py                 ← 5-language translations (Replace)
+│   ├── sidebar.py                  ← Translated navigation (Replace)
+│   ├── report_generator.py         ← PDF report with images (Replace)
+│   ├── symptoms_data.py
+│   ├── benchmark_data.py
+│   ├── qr_generator.py
+│   └── email_sender.py
+│
+└── pages/   ← ALL 43 PAGES IN ORDER
+    │
+    ├── ── CORE ──────────────────────────────────────────
+    ├── 00_Login.py                  ← Doctor + Patient login
+    ├── 0_Dashboard.py               ← Main dashboard
+    ├── 1_Patient_Register.py        ← Register patient
+    ├── 2_AI_Prediction.py           ← Upload ultrasound → AI result ★
+    ├── 3_Patient_Search.py          ← Search patients
+    ├── 4_Today_List.py              ← Today's patients
+    ├── 5_History.py                 ← Visit history
+    │
+    ├── ── AI / MODEL ─────────────────────────────────────
+    ├── 6_Model_Evaluation.py        ← Accuracy, ROC, confusion matrix
+    ├── 7_Dataset_Statistics.py      ← BUSI dataset info
+    ├── 8_AI_Explainability.py       ← XAI methods
+    ├── 9_Experiments.py             ← Model experiments
+    │
+    ├── ── ADMIN ──────────────────────────────────────────
+    ├── 10_User_Management.py        ← Create/manage users
+    ├── 11_Delete_Patient.py         ← Delete patient records
+    ├── 12_Patient_Timeline.py       ← Patient visit timeline
+    ├── 13_Download_Report.py        ← Generate PDF report ★
+    │
+    ├── ── CLINICAL TOOLS ─────────────────────────────────
+    ├── 14_Symptoms_Checker.py       ← Check symptoms
+    ├── 15_Imaging_Guide.py          ← Ultrasound guide
+    ├── 16_Risk_Assessment.py        ← 8-factor risk score
+    ├── 17_Doctor_Notes.py           ← Clinical notes
+    ├── 18_Audit_Log.py              ← System audit trail
+    ├── 19_AI_Second_Opinion.py      ← CNN vs VGG19
+    ├── 20_Population_Analytics.py   ← Epidemiology charts
+    ├── 21_AI_Chatbot.py             ← Symptom chatbot
+    ├── 22_Telemedicine.py           ← Video consultation
+    ├── 23_Digital_Consent.py        ← HIPAA consent
+    ├── 24_Export_Data.py            ← Excel/CSV export
+    ├── 25_Research_Benchmark.py     ← IEEE/Scopus benchmark
+    │
+    ├── ── COMMUNICATION ──────────────────────────────────
+    ├── 26_QR_Login.py               ← QR codes (mobile access)
+    ├── 27_Send_Email.py             ← Email reports/alerts
+    ├── 28_SMS_WhatsApp.py           ← WhatsApp alerts
+    ├── 29_Patient_Portal.py         ← Patient self-service
+    │
+    ├── ── HOSPITAL OPERATIONS ────────────────────────────
+    ├── 30_Compare_Reports.py        ← Side-by-side visit comparison ★
+    ├── 31_OPD_Queue.py              ← Token queue system ★
+    ├── 32_Treatment_Tracker.py      ← Chemo tracker
+    ├── 33_Government_Reports.py     ← ICMR/NHA/ABDM reports
+    ├── 34_Notification_Center.py    ← Smart alerts
+    ├── 35_AI_Cancer_Staging.py      ← TNM staging
+    ├── 36_Live_Monitoring.py        ← Real-time dashboard
+    │
+    ├── ── FUTURE TECH (2027-2029) ────────────────────────
+    ├── 37_AI_Voice_Assistant.py     ← Voice navigation
+    ├── 38_Federated_Learning.py     ← Multi-hospital AI
+    ├── 39_Genomics_AI.py            ← BRCA analysis
+    ├── 40_Drug_Interaction.py       ← Drug checker
+    ├── 41_Patient_Wearables.py      ← IoT monitoring
+    ├── 42_Future_Roadmap.py         ← 2026→3003 roadmap
+    │
+    └── ── EMERGENCY ──────────────────────────────────────
+        └── 43_Emergency_Locator.py  ← GPS hospital finder ★
+
+★ = Key features nobody else has built
+
+══════════════════════════════════════════════════════════════════════
+HOW TO RUN:
+  pip install -r requirements.txt
+  streamlit run app.py
+
+HOW TO RUN FOR MOBILE (any phone, any network):
+  Terminal 1: streamlit run app.py
+  Terminal 2: ngrok http 8501
+  Copy https://xxxx.ngrok.io → paste in QR Login page
+
+SIDEBAR NAVIGATION ORDER (10 groups):
+  1. Main (Home, Dashboard, Login)
+  2. Patient Management
+  3. AI & Diagnosis
+  4. Clinical Tools
+  5. Hospital Operations
+  6. Communication
+  7. Research & Reports
+  8. Admin & Compliance
+  9. 🚨 Emergency Locator
+  10. Future Tech (2027-2029)
+
+══════════════════════════════════════════════════════════════════════
+PUBLISHED BY:
+  CMR University, Bengaluru Lakeside Campus
+  Final Year B.Tech CSE — 2026 Batch
+  Project: Onco AI — AI-Powered Breast Cancer Detection System
+  Guide: [Your Guide Name]
+  Institution: CMR University, Bengaluru — 562149
+══════════════════════════════════════════════════════════════════════
