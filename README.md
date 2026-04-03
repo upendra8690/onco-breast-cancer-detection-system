@@ -24,8 +24,8 @@ streamlit run app.py
 👉 (Paste your Streamlit link here)
 
 ## 👨‍💻 Developer
-Mopuru Upendra Reddy
-Niveditha A
-Mounika N
-Nayana C
+Mopuru Upendra Reddy,
+Niveditha A,
+Mounika N,
+Nayana C,
 CMR University, Bengaluru (2026)
