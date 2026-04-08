@@ -21,7 +21,7 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ## 🌐 Live Demo
-👉 (Paste your Streamlit link here)
+👉  https://onco-breast-cancer-detection-system-u7lkmf5i9ksbspwwuira8q.streamlit.app/
 
 ## 👨‍💻 Developer
 Mopuru Upendra Reddy,
