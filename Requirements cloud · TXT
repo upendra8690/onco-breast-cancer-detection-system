@@ -1,0 +1,18 @@
+# Onco AI — Streamlit Cloud Compatible Requirements
+# Developer: Mopuru Upendra Reddy | CMR University 2026
+
+streamlit>=1.32.0
+tensorflow-cpu==2.13.0
+keras==2.13.1
+opencv-python-headless==4.8.1.78
+numpy==1.24.3
+pandas==2.0.3
+matplotlib==3.7.3
+scikit-learn==1.3.2
+Pillow==10.1.0
+reportlab==4.0.9
+qrcode==7.4.2
+pytz==2023.3
+plotly==5.17.0
+openpyxl==3.1.2
+xlsxwriter==3.1.9
